@@ -1,4 +1,4 @@
-let baseURL = "https://api.cait.moe/api/shorturl/urls";
+let baseURL = "https://api.cait.moe/v1/url/shorturl";
 
 export async function getAll() {
   let headersList = {
