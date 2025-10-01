@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "> cmd"
+echo "> url"
 git pull
 chmod +x ./build.sh
 rm -rf ./out
