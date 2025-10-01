@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Caitlyn">
+  <meta name="description" content="A url shortener by Caitlyn">
+
+  <meta property="og:site_name" content="Url Shortener"/>
+  <meta property="og:description" content="A url shortener by Caitlyn"/>
+  <meta property="og:type" content="website"/>
+
+  <link rel="icon" href="./resources/favicon.ico" type="image/ico"/>
+  <link rel="stylesheet" href="./resources/css/reset.css">
+  <link rel="stylesheet" href="./resources/css/main.css">
+  <title>Url Shortener</title>
+</head>
+<body>
+  <script src="./resources/js/redirect.js" blocking="render" async></script>
+  <script src="./resources/js/startup.js" type="module" ></script>
+  <script src="./resources/js/controls.js" type="module" ></script>
+  <main>
+    <div class="tittle">
+      <h1>Url Shortener</h1>
+    </div>
+    <div class="controls">
+      <div class="top">
+        <div class="password">
+          <input type="password" name="api" id="api" placeholder="API password">
+          <button id="show" class="show"><img src='./resources/svg/show.svg' alt='show'></button>
+        </div>
+      </div>
+      <div class="bot">
+        <div class="old">
+          <label for="old">Original URL: </label>
+          <input type="text" name="old" id="old" placeholder="Original URL">
+        </div>
+        <div class="new">
+          <label for="new">New URL: </label>
+          <div>
+            <p>https://url.cait.moe/?u=</p>
+            <input type="text" name="new" id="new" placeholder="New URL">
+          </div>
+        </div>
+        <div class="controls">
+          <button id="post" class="post">POST</button>
+          <button id="reload" class="post">RELOAD</button>
+        </div>
+      </div>
+      <div id="res"></div>
+    </div>
+    <div class="hbr"></div>
+    <div class="urls" id="urls"></div>
+  </main>
+</body>
+</html>
